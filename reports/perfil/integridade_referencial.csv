@@ -1,0 +1,9 @@
+checagem,linhas,linhas_orfas
+transacoes.product_id em produtos,2595732,0
+demografia.household_key em transacoes,801,0
+campanha_domicilio.household_key em transacoes,7208,0
+campanha_domicilio.campaign em campanhas,7208,0
+cupons.campaign em campanhas,124548,0
+cupons.product_id em produtos,124548,0
+cupons_resgatados.household_key em transacoes,2318,0
+cupons_resgatados.coupon_upc em cupons,2318,0

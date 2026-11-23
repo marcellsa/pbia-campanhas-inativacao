@@ -1,0 +1,11 @@
+regra,linhas,pct
+quantity <= 0,14466,0.5573
+sales_value < 0,0,0.0
+sales_value == 0,18850,0.7262
+retail_disc > 0 (inclui ruído de ponto flutuante),36,0.0014
+"retail_disc > 0,01 (desconto positivo real)",6,0.0002
+coupon_disc > 0,0,0.0
+coupon_match_disc > 0,0,0.0
+trans_time fora do formato HHMM,0,0.0
+week_no fora do padrão (day+1)//7+1,0,0.0
+day <= 0,0,0.0

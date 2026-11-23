@@ -1,0 +1,8 @@
+tabela,linhas,colunas,linhas_duplicadas,celulas_ausentes,chave,chaves_repetidas
+transacoes,2595732,12,0,0,(sem chave natural),
+produtos,92353,7,0,0,product_id,0.0
+demografia,801,8,0,0,household_key,0.0
+campanhas,30,4,0,0,campaign,0.0
+campanha_domicilio,7208,3,0,0,household_key+campaign,0.0
+cupons,124548,3,5164,0,coupon_upc+product_id+campaign,5164.0
+cupons_resgatados,2318,4,0,0,(sem chave natural),

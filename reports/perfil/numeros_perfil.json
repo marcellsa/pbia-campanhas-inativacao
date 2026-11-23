@@ -1,0 +1,157 @@
+{
+  "tabelas": {
+    "transacoes": {
+      "linhas": 2595732,
+      "colunas": 12,
+      "linhas_duplicadas": 0,
+      "celulas_ausentes": 0,
+      "chaves_repetidas": null
+    },
+    "produtos": {
+      "linhas": 92353,
+      "colunas": 7,
+      "linhas_duplicadas": 0,
+      "celulas_ausentes": 0,
+      "chaves_repetidas": 0
+    },
+    "demografia": {
+      "linhas": 801,
+      "colunas": 8,
+      "linhas_duplicadas": 0,
+      "celulas_ausentes": 0,
+      "chaves_repetidas": 0
+    },
+    "campanhas": {
+      "linhas": 30,
+      "colunas": 4,
+      "linhas_duplicadas": 0,
+      "celulas_ausentes": 0,
+      "chaves_repetidas": 0
+    },
+    "campanha_domicilio": {
+      "linhas": 7208,
+      "colunas": 3,
+      "linhas_duplicadas": 0,
+      "celulas_ausentes": 0,
+      "chaves_repetidas": 0
+    },
+    "cupons": {
+      "linhas": 124548,
+      "colunas": 3,
+      "linhas_duplicadas": 5164,
+      "celulas_ausentes": 0,
+      "chaves_repetidas": 5164
+    },
+    "cupons_resgatados": {
+      "linhas": 2318,
+      "colunas": 4,
+      "linhas_duplicadas": 0,
+      "celulas_ausentes": 0,
+      "chaves_repetidas": null
+    }
+  },
+  "regras_transacoes": {
+    "quantity <= 0": 14466,
+    "sales_value < 0": 0,
+    "sales_value == 0": 18850,
+    "retail_disc > 0 (inclui ruído de ponto flutuante)": 36,
+    "retail_disc > 0,01 (desconto positivo real)": 6,
+    "coupon_disc > 0": 0,
+    "coupon_match_disc > 0": 0,
+    "trans_time fora do formato HHMM": 0,
+    "week_no fora do padrão (day+1)//7+1": 0,
+    "day <= 0": 0
+  },
+  "integridade": {
+    "transacoes.product_id em produtos": 0,
+    "demografia.household_key em transacoes": 0,
+    "campanha_domicilio.household_key em transacoes": 0,
+    "campanha_domicilio.campaign em campanhas": 0,
+    "cupons.campaign em campanhas": 0,
+    "cupons.product_id em produtos": 0,
+    "cupons_resgatados.household_key em transacoes": 0,
+    "cupons_resgatados.coupon_upc em cupons": 0
+  },
+  "tempo": {
+    "dia_min": 1,
+    "dia_max": 711,
+    "semana_min": 1,
+    "semana_max": 102,
+    "dias_distintos": 711,
+    "semanas_distintas": 102,
+    "campanha_dia_inicio_min": 224,
+    "campanha_dia_fim_max": 719,
+    "campanhas_com_inicio_apos_fim": 0
+  },
+  "primeira_semana_quantis": {
+    "0.5": 11,
+    "0.9": 16,
+    "0.99": 18,
+    "1.0": 97
+  },
+  "ultima_semana_quantis": {
+    "0.0": 8,
+    "0.01": 56,
+    "0.1": 93,
+    "0.5": 101
+  },
+  "fase1": {
+    "domicilios_transacoes": 2500,
+    "linhas_transacoes": 2595732,
+    "cestas_distintas": 276484,
+    "domicilios_com_demografia": 801,
+    "pct_com_demografia": 32.0,
+    "domicilios_com_campanha": 1584,
+    "domicilios_com_resgate": 434,
+    "campanhas": 30,
+    "produtos": 92353,
+    "lojas": 582,
+    "receita_total_sales_value": 8057463.08,
+    "pct_com_campanha": 63.4,
+    "pct_com_resgate": 17.4
+  },
+  "limpeza": {
+    "linhas_flag_valor_invalido": 18917,
+    "linhas_flag_duplicada": 0,
+    "receita_em_linhas_invalidas": 19.28,
+    "cupons_linhas_duplicadas_removidas": 5164,
+    "campanhas_terminam_apos_fim_da_base": 1
+  },
+  "viabilidade_janelas": [
+    {
+      "obs": "53-78",
+      "perf_semanas": 4,
+      "ativos": 2409,
+      "inativos": 419,
+      "pct": 17.4
+    },
+    {
+      "obs": "53-78",
+      "perf_semanas": 8,
+      "ativos": 2409,
+      "inativos": 211,
+      "pct": 8.8
+    },
+    {
+      "obs": "53-78",
+      "perf_semanas": 12,
+      "ativos": 2409,
+      "inativos": 141,
+      "pct": 5.9
+    },
+    {
+      "obs": "69-94",
+      "perf_semanas": 4,
+      "ativos": 2417,
+      "inativos": 429,
+      "pct": 17.7
+    },
+    {
+      "obs": "69-94",
+      "perf_semanas": 8,
+      "ativos": 2417,
+      "inativos": 244,
+      "pct": 10.1
+    }
+  ]
+}
