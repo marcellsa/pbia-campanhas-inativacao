@@ -1,0 +1,129 @@
+{
+  "resumo_cortes": {
+    "treino": {
+      "domicilios": 2409.0,
+      "pct_recebeu_campanha": 57.6,
+      "pct_resgatou_cupom": 12.3,
+      "pct_com_demografia": 33.3,
+      "monetario_total": 2288669.18,
+      "inativos_4s": 420.0,
+      "pct_inativos_4s": 17.4,
+      "inativos_8s": 213.0,
+      "pct_inativos_8s": 8.8,
+      "inativos_12s": 141.0,
+      "pct_inativos_12s": 5.9
+    },
+    "teste": {
+      "domicilios": 2417.0,
+      "pct_recebeu_campanha": 57.7,
+      "pct_resgatou_cupom": 14.0,
+      "pct_com_demografia": 33.1,
+      "monetario_total": 2311939.71,
+      "inativos_4s": 429.0,
+      "pct_inativos_4s": 17.7,
+      "inativos_8s": 244.0,
+      "pct_inativos_8s": 10.1,
+      "inativos_12s": null,
+      "pct_inativos_12s": null
+    },
+    "score": {
+      "domicilios": 2432.0,
+      "pct_recebeu_campanha": 57.2,
+      "pct_resgatou_cupom": 11.9,
+      "pct_com_demografia": 32.9,
+      "monetario_total": 2328852.42,
+      "inativos_4s": null,
+      "pct_inativos_4s": null,
+      "inativos_8s": null,
+      "pct_inativos_8s": null,
+      "inativos_12s": null,
+      "pct_inativos_12s": null
+    }
+  },
+  "conciliacao_nb01": [
+    {
+      "corte": "treino",
+      "perf": 4,
+      "ativos_nb01": 2409,
+      "ativos_nb02": 2409,
+      "inativos_nb01": 419,
+      "inativos_nb02": 420
+    },
+    {
+      "corte": "treino",
+      "perf": 8,
+      "ativos_nb01": 2409,
+      "ativos_nb02": 2409,
+      "inativos_nb01": 211,
+      "inativos_nb02": 213
+    },
+    {
+      "corte": "treino",
+      "perf": 12,
+      "ativos_nb01": 2409,
+      "ativos_nb02": 2409,
+      "inativos_nb01": 141,
+      "inativos_nb02": 141
+    },
+    {
+      "corte": "teste",
+      "perf": 4,
+      "ativos_nb01": 2417,
+      "ativos_nb02": 2417,
+      "inativos_nb01": 429,
+      "inativos_nb02": 429
+    },
+    {
+      "corte": "teste",
+      "perf": 8,
+      "ativos_nb01": 2417,
+      "ativos_nb02": 2417,
+      "inativos_nb01": 244,
+      "inativos_nb02": 244
+    }
+  ],
+  "verificacao_manual": [
+    {
+      "tipo": "inativo",
+      "household_key": 187,
+      "frequencia": 10,
+      "monetario": 108.65,
+      "recencia_dias": 1,
+      "n_campanhas": 1,
+      "n_resgates": 0,
+      "inativo_8s": 1
+    },
+    {
+      "tipo": "ativo",
+      "household_key": 1937,
+      "frequencia": 52,
+      "monetario": 1922.82,
+      "recencia_dias": 1,
+      "n_campanhas": 2,
+      "n_resgates": 12,
+      "inativo_8s": 0
+    },
+    {
+      "tipo": "resgatou",
+      "household_key": 1753,
+      "frequencia": 142,
+      "monetario": 1058.81,
+      "recencia_dias": 0,
+      "n_campanhas": 3,
+      "n_resgates": 2,
+      "inativo_8s": 0
+    }
+  ],
+  "correlacoes_altas_spearman": [
+    {
+      "a": "frequencia",
+      "b": "monetario",
+      "rho": 0.85
+    },
+    {
+      "a": "monetario",
+      "b": "n_departamentos",
+      "rho": 0.84
+    }
+  ]
+}
