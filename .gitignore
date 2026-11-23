@@ -1,0 +1,16 @@
+# dados (licença e tamanho: não versionar)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+!data/README.md
+
+# ambiente
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# Power BI: versionar só o .pbix final
+powerbi/*.pbix.bak
