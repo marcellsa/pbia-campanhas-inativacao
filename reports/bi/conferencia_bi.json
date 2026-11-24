@@ -1,0 +1,35 @@
+{
+  "receita_itens_validos": 8057443.8,
+  "cestas": 275539,
+  "domicilios_com_venda": 2500,
+  "ticket_medio_geral": 29.24,
+  "score": {
+    "domicilios": 2432,
+    "recencia_media_dias": 18.05,
+    "frequencia_media": 31.04,
+    "ticket_medio_domicilio": 33.29,
+    "taxa_resgate_entre_expostos_pct": 20.9,
+    "receita_esperada_em_risco": 75298.65,
+    "domicilios_risco_alto": 244
+  },
+  "teste": {
+    "domicilios": 2417,
+    "recencia_media_dias": 15.88,
+    "frequencia_media": 32.01,
+    "ticket_medio_domicilio": 32.36,
+    "taxa_resgate_entre_expostos_pct": 24.3,
+    "taxa_inativacao_8s_pct": 10.1,
+    "taxa_inativacao_com_campanha_pct": 4.0,
+    "taxa_inativacao_sem_campanha_pct": 18.4
+  },
+  "treino": {
+    "domicilios": 2409,
+    "recencia_media_dias": 16.45,
+    "frequencia_media": 32.54,
+    "ticket_medio_domicilio": 31.56,
+    "taxa_resgate_entre_expostos_pct": 21.4,
+    "taxa_inativacao_8s_pct": 8.8,
+    "taxa_inativacao_com_campanha_pct": 2.8,
+    "taxa_inativacao_sem_campanha_pct": 17.0
+  }
+}
