@@ -1,0 +1,5 @@
+,OR,IC95_inf,IC95_sup,p_valor
+recebeu_campanha,0.7173,0.4571,1.1257,0.1484
+recencia_sem,1.1169,1.0796,1.1555,0.0
+log_freq,0.4525,0.317,0.6458,0.0
+log_monetario,0.7985,0.6419,0.9933,0.0434

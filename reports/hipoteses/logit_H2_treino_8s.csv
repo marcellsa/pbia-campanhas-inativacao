@@ -1,0 +1,5 @@
+,OR,IC95_inf,IC95_sup,p_valor
+resgatou_cupom,0.1922,0.0262,1.4103,0.1048
+recencia_sem,1.1152,1.0782,1.1535,0.0
+log_freq,0.4361,0.3093,0.615,0.0
+log_monetario,0.7962,0.6408,0.9892,0.0396

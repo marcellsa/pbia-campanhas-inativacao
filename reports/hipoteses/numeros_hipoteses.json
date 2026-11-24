@@ -1,0 +1,196 @@
+{
+  "bruta_treino_8s": [
+    {
+      "variavel": "recebeu_campanha",
+      "n_0": 1021,
+      "n_1": 1388,
+      "inativ_pct_0": 17.0,
+      "inativ_pct_1": 2.8,
+      "chi2": 146.08,
+      "p_valor": 1.2474175992209168e-33
+    },
+    {
+      "variavel": "resgatou_cupom",
+      "n_0": 2112,
+      "n_1": 297,
+      "inativ_pct_0": 10.0,
+      "inativ_pct_1": 0.3,
+      "chi2": 29.21,
+      "p_valor": 6.488134672154623e-08
+    }
+  ],
+  "vif_treino": {
+    "recencia_sem": 1.61,
+    "log_freq": 4.25,
+    "log_monetario": 4.17,
+    "recebeu_campanha": 1.67,
+    "resgatou_cupom": 1.17
+  },
+  "sensibilidade": [
+    {
+      "hipotese": "H1",
+      "corte": "treino",
+      "perf_semanas": 4,
+      "n": 2409,
+      "inativos": 420,
+      "OR": 0.801,
+      "IC95_inf": 0.579,
+      "IC95_sup": 1.107,
+      "p_valor": 0.1791
+    },
+    {
+      "hipotese": "H2",
+      "corte": "treino",
+      "perf_semanas": 4,
+      "n": 2409,
+      "inativos": 420,
+      "OR": 0.506,
+      "IC95_inf": 0.216,
+      "IC95_sup": 1.184,
+      "p_valor": 0.1163
+    },
+    {
+      "hipotese": "H1",
+      "corte": "treino",
+      "perf_semanas": 8,
+      "n": 2409,
+      "inativos": 213,
+      "OR": 0.717,
+      "IC95_inf": 0.457,
+      "IC95_sup": 1.126,
+      "p_valor": 0.1484
+    },
+    {
+      "hipotese": "H2",
+      "corte": "treino",
+      "perf_semanas": 8,
+      "n": 2409,
+      "inativos": 213,
+      "OR": 0.192,
+      "IC95_inf": 0.026,
+      "IC95_sup": 1.41,
+      "p_valor": 0.1048
+    },
+    {
+      "hipotese": "H1",
+      "corte": "treino",
+      "perf_semanas": 12,
+      "n": 2409,
+      "inativos": 141,
+      "OR": 0.746,
+      "IC95_inf": 0.428,
+      "IC95_sup": 1.3,
+      "p_valor": 0.301
+    },
+    {
+      "hipotese": "H2",
+      "corte": "treino",
+      "perf_semanas": 12,
+      "n": 2409,
+      "inativos": 141,
+      "OR": 0.333,
+      "IC95_inf": 0.045,
+      "IC95_sup": 2.481,
+      "p_valor": 0.2831
+    },
+    {
+      "hipotese": "H1",
+      "corte": "teste",
+      "perf_semanas": 4,
+      "n": 2417,
+      "inativos": 429,
+      "OR": 0.853,
+      "IC95_inf": 0.623,
+      "IC95_sup": 1.168,
+      "p_valor": 0.3226
+    },
+    {
+      "hipotese": "H2",
+      "corte": "teste",
+      "perf_semanas": 4,
+      "n": 2417,
+      "inativos": 429,
+      "OR": 0.533,
+      "IC95_inf": 0.271,
+      "IC95_sup": 1.048,
+      "p_valor": 0.068
+    },
+    {
+      "hipotese": "H1",
+      "corte": "teste",
+      "perf_semanas": 8,
+      "n": 2417,
+      "inativos": 244,
+      "OR": 0.846,
+      "IC95_inf": 0.566,
+      "IC95_sup": 1.262,
+      "p_valor": 0.4119
+    },
+    {
+      "hipotese": "H2",
+      "corte": "teste",
+      "perf_semanas": 8,
+      "n": 2417,
+      "inativos": 244,
+      "OR": 0.818,
+      "IC95_inf": 0.365,
+      "IC95_sup": 1.835,
+      "p_valor": 0.6264
+    }
+  ],
+  "inativos_na_subamostra_demografia": {
+    "teste": {
+      "inativo_4s": 38,
+      "inativo_8s": 20,
+      "inativo_12s": 0
+    },
+    "treino": {
+      "inativo_4s": 1,
+      "inativo_8s": 0,
+      "inativo_12s": 0
+    }
+  },
+  "moderacao_corte": "teste",
+  "moderacao_demografia_8s": [
+    {
+      "hipotese": "H1",
+      "n": 801,
+      "inativos": 20,
+      "OR": 0.349,
+      "IC95_inf": 0.092,
+      "IC95_sup": 1.326,
+      "p_valor": 0.1223
+    },
+    {
+      "hipotese": "H2",
+      "n": 801,
+      "inativos": 20,
+      "OR": 2.043,
+      "IC95_inf": 0.525,
+      "IC95_sup": 7.954,
+      "p_valor": 0.3031
+    }
+  ],
+  "veredito": [
+    {
+      "hipotese": "H1",
+      "OR_principal": 0.717,
+      "IC95": [
+        0.457,
+        1.126
+      ],
+      "p_principal": 0.1484,
+      "veredito": "refutada (sem diferença significativa a 5% na análise principal)"
+    },
+    {
+      "hipotese": "H2",
+      "OR_principal": 0.192,
+      "IC95": [
+        0.026,
+        1.41
+      ],
+      "p_principal": 0.1048,
+      "veredito": "refutada (sem diferença significativa a 5% na análise principal)"
+    }
+  ]
+}
