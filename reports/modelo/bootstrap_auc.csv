@@ -1,0 +1,4 @@
+comparacao,dif_media,IC95_inf,IC95_sup,reamostragens
+completa_menos_rfm,-0.0048,-0.0114,0.0019,1000
+completa_menos_recencia,0.0415,0.0173,0.0661,1000
+rfm_menos_recencia,0.0462,0.0241,0.0706,1000

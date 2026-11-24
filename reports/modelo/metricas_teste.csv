@@ -1,0 +1,4 @@
+modelo,AUC_treino,AUC_teste,acuracia,precisao,recall,F1,precisao_top10,lift_top10
+regra_recencia,0.853,0.815,0.873,0.395,0.488,0.437,0.424,4.205
+logistica_rfm,0.892,0.862,0.876,0.405,0.492,0.444,0.421,4.175
+logistica_completa,0.894,0.857,0.878,0.409,0.471,0.438,0.43,4.257
